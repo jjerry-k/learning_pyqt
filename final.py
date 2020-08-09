@@ -106,7 +106,6 @@ class App(QMainWindow):
         self.stbar.showMessage(txt) 
 
     def showDialog(self):
-
         self.fname = QFileDialog.getExistingDirectory(self, 'Open file')
         # self.fname = './img'
         file_list = [i for i in sorted(os.listdir(self.fname)) if i.split('.')[1] in ['jpg', 'jpeg', 'png', 'bmp', 'tiff']]
